@@ -1,4 +1,4 @@
-{% set version = '0.0.13' %}
+{% set version = "0.0.15" %}
 
 package:
   name: optlang_enumerator
@@ -6,11 +6,11 @@ package:
 
 source:
   url: https://github.com/cnapy-org/optlang_enumerator/archive/v{{ version }}.tar.gz
-  sha256: fa45d0a2e1ad3a6a5aff7a3743442c97bc25ebcdd2bd15f92e5692db03ca929a
+  sha256: 6a7a470d0f6ef0115b8a24f85ec2c3bc98e4fb9c18bace3496737e241edf1cc6
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
@@ -37,7 +37,7 @@ test:
     - pip check
 
 about:
-  home:  https://github.com/cnapy-org/optlang_enumerator
+  home: https://github.com/cnapy-org/optlang_enumerator
   license: Apache-2.0
   license_family: MIT
   license_file: LICENSE
